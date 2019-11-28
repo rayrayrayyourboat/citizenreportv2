@@ -79,7 +79,6 @@ class _HomeState extends State<Home> {
                       new Container( //source code here for Container solution on TextFormField width issue: https://stackoverflow.com/questions/50400529/how-to-update-flutter-textfields-height-and-width
                           width: 250.0,
                           child: TextFormField(
-                              textAlign: TextAlign.center,
                               textCapitalization: TextCapitalization.characters,
                               //source  https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a
                               decoration: new InputDecoration(
@@ -123,7 +122,6 @@ class _HomeState extends State<Home> {
                           padding: EdgeInsets.all(10.0),
                           width: 250.0,
                           child: TextFormField(
-                              textAlign: TextAlign.center,
                               textCapitalization: TextCapitalization.sentences,
                               maxLines: 7,
                               decoration: new InputDecoration(
