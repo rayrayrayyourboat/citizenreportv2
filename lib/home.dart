@@ -21,14 +21,18 @@ class _HomeState extends State<Home> {
 
   var _reports = [
     'Medical Emergencies',
-    'Vehicular Accidents',
-    'Natural Disasters',
+    'Vehicular Accident',
+    'Earthquake',
+    'Fire Emergency',
+    'Flooding',
+    'Robbery / Theft',
     'Others'
   ];
   var _currentItemSelected = 'Medical Emergencies';
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init();
     return Scaffold(
         appBar: GradientAppBar(
           title: Text('CITIZEN REPORTING'),
@@ -39,7 +43,7 @@ class _HomeState extends State<Home> {
         ),
         body: Center( //basis: https://api.flutter.dev/flutter/material/IconButton-class.html
             child: Container(
-                padding: EdgeInsets.all(30.0),
+                padding: EdgeInsets.all(SizeConfig.blockSizeHorizontal*10),
                 child: Column(
                     children: <Widget>[
                       new Container(
